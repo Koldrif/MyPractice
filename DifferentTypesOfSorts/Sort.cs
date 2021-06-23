@@ -70,7 +70,7 @@ namespace DifferentTypesOfSorts
         {
             bool flag;
             var timer = System.Diagnostics.Stopwatch.StartNew();
-            for (int i = 0; i < inputArr.Length; i++)
+            for (int i = 0; i < inputArr.Length / 2; i++)
             {
                 flag = false;
                 // Перенос нибольщего в конец массива
@@ -83,7 +83,7 @@ namespace DifferentTypesOfSorts
                     }
                 }
                 //Перенос наименшьего в начало массива
-                for (int j = inputArr.Length - 1 - i; j - 1 > i; j--)
+                for (int j = inputArr.Length - 2 - i; j - 1 > i; j--)
                 {
                     if (inputArr[j].CompareTo(inputArr[j - 1]) < 0)
                     {
@@ -105,7 +105,7 @@ namespace DifferentTypesOfSorts
         {
             bool flag;
             var timer = System.Diagnostics.Stopwatch.StartNew();
-            for (int i = 0; i < inputArr.Length; i++)
+            for (int i = 0; i < inputArr.Length / 2; i++)
             {
                 flag = false;
                 // Перенос нибольщего в конец массива
