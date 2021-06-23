@@ -4,7 +4,7 @@ namespace DifferentTypesOfSorts
 {
     public static class Sort
     {
-        private static void swap<T>(ref T[] items, int IndLeft, int IndRight) where T : IComparable
+        private static void swap<T>(ref T[] items, int IndLeft, int IndRight)
         {
             if (IndLeft != IndRight)
             {
