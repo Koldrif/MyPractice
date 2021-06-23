@@ -1,0 +1,16 @@
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.exe
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.deps.json
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.runtimeconfig.json
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.runtimeconfig.dev.json
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.dll
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\ref\DifferentTypesOfSorts.dll
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\bin\Debug\net5.0\DifferentTypesOfSorts.pdb
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.csprojAssemblyReference.cache
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.AssemblyInfoInputs.cache
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.AssemblyInfo.cs
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.csproj.CoreCompileInputs.cache
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.dll
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\ref\DifferentTypesOfSorts.dll
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.pdb
+D:\Programming\C#\MySelf\DifferentTypesOfSorts\obj\Debug\net5.0\DifferentTypesOfSorts.genruntimeconfig.cache
