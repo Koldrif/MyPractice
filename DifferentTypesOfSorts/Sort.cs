@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace DifferentTypesOfSorts
 {
@@ -27,16 +28,36 @@ namespace DifferentTypesOfSorts
         {
             System.Console.WriteLine("\nStarted bubble sort...");
             var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
+
             for (int i = 0; i < inputArr.Length; i++)
             {
                 for (int j = i + 1; j < inputArr.Length; j++)
                 {
+                    //Визуализировать сортировку
+                    foreach (var item in inputArr)
+                    {
+                        if (item.CompareTo(inputArr[i]) == 0 || item.CompareTo(inputArr[j]) == 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
+                        System.Console.Write("[ {0} ]", item);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    System.Console.WriteLine();
+
+
                     if (inputArr[i].CompareTo(inputArr[j]) > 0)
                     {
                         swap(ref inputArr, i, j);
+
                     }
+
+
                 }
             }
+
+
             stopwatch.Stop();
             System.Console.WriteLine();
             Console.WriteLine($"Код выполнялся: {stopwatch.Elapsed}");
@@ -47,20 +68,37 @@ namespace DifferentTypesOfSorts
         public static void bubbleSort2<T>(ref T[] inputArr) where T : IComparable
         {
             System.Console.WriteLine("\nStarted another bubble sort...");
-            bool flag = false;
+            bool flag = true;
             var stopwatch = System.Diagnostics.Stopwatch.StartNew();
-            do
+
+
+            int j = 0;
+            while (flag)
             {
                 flag = false;
-                for (int i = 0; i + 1 < inputArr.Length - i; i++)
+                for (int i = 0; i + 1 < inputArr.Length - j; i++)
                 {
+                    //Визуализировать сортировку
+                    // foreach (var item in inputArr)
+                    // {
+                    //     if (item.CompareTo(inputArr[i]) == 0 || item.CompareTo(inputArr[i + 1]) == 0)
+                    //     {
+                    //         Console.ForegroundColor = ConsoleColor.Green;
+                    //     }
+                    //     System.Console.Write("[ {0} ]", item);
+                    //     Console.ForegroundColor = ConsoleColor.White;
+                    // }
+                    // System.Console.WriteLine();
+
                     if (inputArr[i].CompareTo(inputArr[i + 1]) > 0)
                     {
                         swap(ref inputArr, i, i + 1);
                         flag = true;
                     }
                 }
-            } while (flag);
+                j++;
+            }
+
 
             stopwatch.Stop();
             Console.WriteLine($"Код выполнялся: {stopwatch.Elapsed}\n\n");
@@ -70,6 +108,8 @@ namespace DifferentTypesOfSorts
         {
             bool flag;
             var timer = System.Diagnostics.Stopwatch.StartNew();
+
+
             for (int i = 0; i < inputArr.Length / 2; i++)
             {
                 flag = false;
@@ -81,6 +121,16 @@ namespace DifferentTypesOfSorts
                         swap(ref inputArr[j], ref inputArr[j + 1]);
                         flag = true;
                     }
+                    foreach (var item in inputArr)
+                    {
+                        if (item.CompareTo(inputArr[i]) == 0 || item.CompareTo(inputArr[i + 1]) == 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
+                        System.Console.Write("[ {0} ]", item);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    System.Console.WriteLine();
                 }
                 //Перенос наименшьего в начало массива
                 for (int j = inputArr.Length - 2 - i; j - 1 > i; j--)
@@ -90,12 +140,24 @@ namespace DifferentTypesOfSorts
                         swap(ref inputArr[j - 1], ref inputArr[j]);
                         flag = true;
                     }
+                    foreach (var item in inputArr)
+                    {
+                        if (item.CompareTo(inputArr[i]) == 0 || item.CompareTo(inputArr[i + 1]) == 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
+                        System.Console.Write("[ {0} ]", item);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    System.Console.WriteLine();
                 }
                 if (!flag)
                 {
                     break;
                 }
             }
+
+
             timer.Stop();
             System.Console.WriteLine("Код отработал: {0}", timer.Elapsed);
             return;
@@ -105,6 +167,8 @@ namespace DifferentTypesOfSorts
         {
             bool flag;
             var timer = System.Diagnostics.Stopwatch.StartNew();
+
+
             for (int i = 0; i < inputArr.Length / 2; i++)
             {
                 flag = false;
@@ -121,6 +185,16 @@ namespace DifferentTypesOfSorts
                         swap(ref inputArr[k - 1], ref inputArr[k]);
                         flag = true;
                     }
+                    foreach (var item in inputArr)
+                    {
+                        if (item.CompareTo(inputArr[i]) == 0 || item.CompareTo(inputArr[i + 1]) == 0)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                        }
+                        System.Console.Write("[ {0} ]", item);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    System.Console.WriteLine();
 
                 }
                 if (!flag)
@@ -128,6 +202,8 @@ namespace DifferentTypesOfSorts
                     break;
                 }
             }
+
+
             timer.Stop();
             System.Console.WriteLine("Код отработал: {0}", timer.Elapsed);
             return;
