@@ -16,6 +16,7 @@ namespace DifferentTypesOfSorts
         }
         private static void swap<T>(ref T IndLeft, ref T IndRight) where T : IComparable
         {
+            IndLeft.CompareTo(IndRight);
             if (IndLeft.CompareTo(IndRight) != 0)
             {
                 var temp = IndLeft;
